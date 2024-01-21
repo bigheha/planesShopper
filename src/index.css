@@ -11,9 +11,11 @@
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
-body {
-  height: 100%;
+
+#root {
+	padding-top: 72px;
 }
+
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -62,4 +64,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+@media all and (min-width: 768px) {
+	#root {
+		padding-top: 105px;
+	}
 }
