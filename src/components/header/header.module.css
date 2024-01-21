@@ -19,6 +19,15 @@
     margin: 1rem;
 }
 
+.openNavbarBtn {
+    position: absolute;
+    top: 15px;
+    right:20px;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0.5rem;
+}
+
 .navigation {
     display: none;
     justify-content: center;
@@ -34,7 +43,7 @@
     padding: 0.5rem 1rem;
     border-top: 1px solid var(--background);
     border-right: 1px solid var(--background);
-    transition: color ease-in 200ms;
+    transition: all ease-in 200ms;
 }
 
  .active {
@@ -58,5 +67,8 @@
     }
     .navigation {
         display: flex;
+    }
+    .openNavbarBtn {
+        display: none;
     }
 }
