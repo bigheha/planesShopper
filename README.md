@@ -11,3 +11,4 @@ PlanesShopper is an online shop application for a local game store that speciali
 - JS
 - CSS
 - NPM
+- Fontawesome v6

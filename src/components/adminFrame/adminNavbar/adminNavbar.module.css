@@ -1,0 +1,35 @@
+.container {
+    background-color: rgb(185, 255, 247);
+    grid-row: 2 / 3;
+}
+
+.navButtons {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.navBtn {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 400;
+    border-radius: 2rem;
+    color: rgba(26,79,134,1);
+    transition: color ease-in 200ms;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.navBtn:hover {
+    color: rgb(0, 191, 255);
+    transition: color ease-in 200ms;
+}
+
+.active {
+    border: 2px solid rgba(26,79,134,1);;
+    color: rgba(26,79,134,1);;
+}
+
+.navBtn:hover.active {
+    color: rgba(26,79,134,1);;
+}

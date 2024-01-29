@@ -1,4 +1,4 @@
-import { useAppSelector } from "../../RTKhooks";
+import { useAppSelector } from "../../../RTKhooks";
 import { NavLink } from "react-router-dom";
 import styles from "./mobileNavbar.module.css";
 

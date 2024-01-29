@@ -6,16 +6,15 @@
   --secondary: #BEB7A4;
   --text: #191716;
   --active: #E6AF2E;
+  --border-roundness: 0.5rem;
   height: 100%;
-  background: var(--background);
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   font-weight: 300;
 }
 
-#root {
-	padding-top: 72px;
+body, #root {
+	height: 100%;
 }
-
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -64,10 +63,4 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-@media all and (min-width: 768px) {
-	#root {
-		padding-top: 105px;
-	}
 }
