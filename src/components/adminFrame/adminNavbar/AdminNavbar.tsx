@@ -9,7 +9,7 @@ const resolveActiveStyle = ({ isActive }: {isActive: boolean}) => {
 function AdminNavbar() {
     return <div className={styles.container}>
         <nav className={styles.navButtons}>
-            <NavLink to={'/admin/mtg'} className={resolveActiveStyle}>magic products</NavLink>
+            <NavLink to={'/admin/products'} className={resolveActiveStyle}>Products</NavLink>
         </nav>
     </div>
 }

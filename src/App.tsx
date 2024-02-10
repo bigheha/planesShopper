@@ -8,12 +8,12 @@ import AlbumsPage from './components/store-page-components/albumsPage/AlbumsPage
 import BoxesPage from './components/store-page-components/boxesPage/BoxesPage'
 import StoreFrame from './components/storeFrame/StoreFrame'
 import AdminFrame from './components/adminFrame/AdminFrame'
-
+import AdminProductsPage from './components/admin-page-components/adminCardsPage/AdminProductsPage'
 function App() {
   return (
     <Routes>
       <Route path='admin' element={<AdminFrame/>}>
-        <Route path='mtg' element={<MTGpage/>}/>
+        <Route path='products' element={<AdminProductsPage/>}/>
       </Route>
       <Route path='store' element={<StoreFrame/>}>
         <Route index element={<MainPage/>}/>

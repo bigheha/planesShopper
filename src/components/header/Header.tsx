@@ -22,7 +22,7 @@ function Header() {
         </NavLink>
         <i className={`${isOpen ? 'fa-solid fa-bars-staggered' : 'fa-solid fa-bars' } ${styles.openNavbarBtn}`} style={{color: "#d6d6d6"}} onClick={handleToggleOpen}></i>
         <nav className={styles.navDesktop}>
-            <NavLink to="/store/mtg" className={resolveActiveStyle}>Magic: The gathering</NavLink>
+            <NavLink to="/store/mtg" className={resolveActiveStyle}>Cards</NavLink>
             <NavLink to="/store/sleeves" className={resolveActiveStyle}>card sleeves</NavLink>
             <NavLink to="/store/playmats" className={resolveActiveStyle}>playmats</NavLink>
             <NavLink to="/store/cards" className={resolveActiveStyle}>cards</NavLink>

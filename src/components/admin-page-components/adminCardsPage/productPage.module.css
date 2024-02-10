@@ -1,0 +1,5 @@
+.productsGrid {
+    display: grid;
+    grid-auto-rows: 5rem;
+    padding: 1rem;
+}
