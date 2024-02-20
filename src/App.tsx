@@ -9,6 +9,7 @@ import BoxesPage from './components/store-page-components/boxesPage/BoxesPage'
 import StoreFrame from './components/storeFrame/StoreFrame'
 import AdminFrame from './components/adminFrame/AdminFrame'
 import AdminProductsPage from './components/admin-page-components/adminCardsPage/AdminProductsPage'
+
 function App() {
   return (
     <Routes>
