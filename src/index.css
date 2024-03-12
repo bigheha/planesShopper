@@ -69,3 +69,11 @@ table, td, tr, th {
     border: 1px dashed black;
 	text-align: center;
 }
+
+button {
+	font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+}
+
+input {
+	font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+}

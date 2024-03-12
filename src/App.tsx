@@ -1,24 +1,24 @@
 import { Routes, Route } from "react-router-dom";
-import MainPage from "./components/store-page-components/MainPage/MainPage";
-import MTGpage from "./components/store-page-components/MTGPage/MTGpage";
-import SleevesPage from "./components/store-page-components/sleevesPage/SleevesPage";
-import PlaymatsPage from "./components/store-page-components/playmatsPage/PlaymatsPage";
-import CardsPage from "./components/store-page-components/cardsPage/CardsPage";
-import AlbumsPage from "./components/store-page-components/albumsPage/AlbumsPage";
-import BoxesPage from "./components/store-page-components/boxesPage/BoxesPage";
-import StoreFrame from "./components/storeFrame/StoreFrame";
-import AdminFrame from "./components/adminFrame/AdminFrame";
-import AdminProductsPage from "./components/admin-page-components/adminCardsPage/AdminProductsPage";
-import AuthentificationPage from "./components/admin-page-components/loginPage/AuthentificationPage";
+import MainPage from "./components/store/store-page-components/MainPage/MainPage";
+import MTGpage from "./components/store/store-page-components/MTGPage/MTGpage";
+import SleevesPage from "./components/store/store-page-components/sleevesPage/SleevesPage";
+import PlaymatsPage from "./components/store/store-page-components/playmatsPage/PlaymatsPage";
+import CardsPage from "./components/store/store-page-components/cardsPage/CardsPage";
+import AlbumsPage from "./components/store/store-page-components/albumsPage/AlbumsPage";
+import BoxesPage from "./components/store/store-page-components/boxesPage/BoxesPage";
+import StoreFrame from "./components/store/storeFrame/StoreFrame";
+import AdminProductsPage from "./components/admin/admin-page-components/adminCardsPage/AdminProductsPage";
 import PrivateRoutes from "./auth/PrivateRoutes";
+import DashboardFrame from "./components/admin/adminFrame/DashboardFrame";
+import LoginPage from "./components/admin/admin-page-components/loginPage/LoginPage";
 
 function App() {
   return (
     <Routes>
       <Route path="admin">
-        <Route path="login" element={<AuthentificationPage />} />
+        <Route path="login" element={<LoginPage />} />
         <Route element={<PrivateRoutes />}>
-          <Route path="dashboard" element={<AdminFrame />}>
+          <Route path="dashboard" element={<DashboardFrame />}>
             <Route path="products" element={<AdminProductsPage />} />
           </Route>
         </Route>
