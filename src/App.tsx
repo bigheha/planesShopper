@@ -7,7 +7,7 @@ import CardsPage from "./components/store/store-page-components/cardsPage/CardsP
 import AlbumsPage from "./components/store/store-page-components/albumsPage/AlbumsPage";
 import BoxesPage from "./components/store/store-page-components/boxesPage/BoxesPage";
 import StoreFrame from "./components/store/storeFrame/StoreFrame";
-import AdminProductsPage from "./components/admin/admin-page-components/adminCardsPage/AdminProductsPage";
+import AdminProductsPage from "./components/admin/admin-page-components/adminProductsPage/AdminProductsPage";
 import PrivateRoutes from "./auth/PrivateRoutes";
 import DashboardFrame from "./components/admin/adminFrame/DashboardFrame";
 import LoginPage from "./components/admin/admin-page-components/loginPage/LoginPage";

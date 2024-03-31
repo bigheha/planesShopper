@@ -7,6 +7,7 @@ function DashboardFrame() {
     <div className={styles.grid}>
       <div className={styles.header}>
         <p className={styles.logoText}>PlanesShopper admin</p>
+        <button className={styles.logOutBtn}>log out</button>
       </div>
       <AdminNavbar />
       <div className={styles.outletWrapper}>
