@@ -9,11 +9,9 @@ interface ProductMutationProps {
   }
 
 function ProductCapsule({product} : any) {
-    console.log(product);
-
     const mutation = useMutation({
-        mutationFn: ({ amount, id }: ProductMutationProps) => {
-          return axios.patch("http://localhost:3000/products", { amount, id });
+        mutationFn:  ({ amount, id }: ProductMutationProps) => {
+          return  axios.patch("http://localhost:3000/products/changeOne", { amount, id });
         },
       });
 
@@ -25,18 +23,18 @@ function ProductCapsule({product} : any) {
           <FontAwesomeIcon
             icon={["fas", "minus-circle"]}
             onClick={() => {
-              const newAmount = product.amount--;
-              const id = product.id;
-              mutation.mutate({ amount: newAmount, id });
+              const id = product._id;
+              mutation.mutate({  amount: product.amount - 1, id });
+              product.amount--;
             }}
           />
           <input type="text" className={productStyles.productText} value={product.amount} />
           <FontAwesomeIcon
             icon={["fas", "plus-circle"]}
-            onClick={() => {
-              const newAmount = product.amount++;
-              const id = product.id;
-              mutation.mutate({ amount: newAmount, id });
+            onClick={ () => {
+              const id = product._id;
+              mutation.mutate({ amount: product.amount + 1, id: id });
+              product.amount++;
             }}
           />
         </div>

@@ -8,7 +8,7 @@ import ProductCapsule from "./productCapsule/ProductCapsule";
 function AdminProductsPage() {
   const { data, isPending, isError } = useQuery({
     queryKey: ["products"],
-    queryFn: () => axios.get("http://localhost:3000/products"),
+    queryFn: () => axios.get("http://localhost:3000/products/getAll"),
   });
   const products = data?.data;
 
